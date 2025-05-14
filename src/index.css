@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-gray-50 font-sans;
+}
+
+.btn {
+  @apply py-2 px-4 rounded transition-all duration-200 font-medium focus:outline-none focus:ring-2;
+}
+
+.btn-primary {
+  @apply bg-primary hover:bg-primary-dark text-white;
+}
+
+.btn-secondary {
+  @apply bg-secondary hover:bg-secondary-dark text-white;
+}
+
+.btn-outline {
+  @apply border border-gray-300 hover:bg-gray-100 text-gray-700;
+}
+
+.btn-success {
+  @apply bg-success hover:bg-green-600 text-white;
+}
+
+.btn-error {
+  @apply bg-error hover:bg-red-600 text-white;
+}
+
+.quiz-card {
+  @apply bg-white rounded-lg shadow-md p-6;
+}
+
+.input {
+  @apply w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary-light;
+}
+
+.section-card {
+  @apply bg-white rounded-lg border border-gray-200 p-4 mb-4;
+}
+
+.option-correct {
+  @apply bg-green-100 border-green-500 text-green-800;
+}
+
+.option-incorrect {
+  @apply bg-red-100 border-red-500 text-red-800;
+}
